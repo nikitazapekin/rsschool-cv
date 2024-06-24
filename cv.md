@@ -29,7 +29,7 @@ focused on results. I strive to constantly improve my skills.
 * English (B1+)
 * Russian (Native)
 ## Education
-* Belarusian State University, applied informatics (2022-2026, unfinished)
+* Belarusian State University, applied informatics (2022-2026, unfinished).
 ## Location
 * Minsk
 ## Work experience
