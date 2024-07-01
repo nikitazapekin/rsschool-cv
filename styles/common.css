@@ -1,0 +1,16 @@
+.btn {
+    cursor: pointer;
+     transition: 1s ease-in;
+}
+
+.btn:hover {
+ text-decoration: underline;   
+}
+.text-title {
+    font-weight: var(--bold);
+     font-size: 64px;
+     color: var(--brown);
+}
+.text-title-white {
+    color: var(--white);
+}
