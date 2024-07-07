@@ -14,3 +14,9 @@
 .text-title-white {
     color: var(--white);
 }
+
+@media screen and (max-width: 650px) {
+    .text-title {
+        font-size: 42px;
+    }
+}

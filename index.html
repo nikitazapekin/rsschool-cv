@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/theme.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.css" rel="stylesheet" />
+</head>
 </head>
 
 <body>
@@ -41,7 +43,42 @@
                     </ul>
                 </nav>
             </div>
+
+            <div class="burger">
+                <div class="burger__container">
+                    <div class="burger__btn">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </div>
+                </div>
+                <div class="burger__inner">
+                    <ul class="burger__list">
+                        <li class="burger__item">
+                            <a href="#" class="header__logo">
+                                <img src="./images/common/rs.png" alt="logo" class="header__image">
+                            </a>
+                        </li>
+                        <li class="burger__item">
+                            <a href="https://github.com/nikitazapekin" class="header__btn btn">
+                                Github
+                            </a>
+                        </li>
+                        <li class="burger__item">
+                            <a href="https://www.linkedin.com/in/nikita-zapekin-309b42266/" class="header__btn btn">
+                                Linkedin
+                            </a>
+                        </li>
+                        <li class="burger__item">
+                            <a href="https://www.codewars.com/users/nikitazapekin" class="header__btn btn">
+                                Codewars
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </header>
+
         <main class="main">
             <section class="personal">
                 <div class="personal__decor"></div>
@@ -186,7 +223,7 @@
                         <div class="languages__blocks">
                             <div class="language__block">
                                 English
-                                 (B1+)
+                                (B1+)
                             </div>
                             <div class="language__block">
                                 Russian
@@ -270,7 +307,8 @@
                             </p>
                             <div class="slider__item-btns">
                                 <div class="slider__item-btn">
-                                    <a href="https://github.com/nikitazapekin/Restaurant-monitoring-React-and-Three.js-app">
+                                    <a
+                                        href="https://github.com/nikitazapekin/Restaurant-monitoring-React-and-Three.js-app">
                                         Client code on github
                                     </a>
                                 </div>
@@ -294,7 +332,8 @@
                             </p>
                             <div class="slider__item-btns">
                                 <div class="slider__item-btn">
-                                    <a href="https://github.com/nikitazapekin/Cloud-storage-of-Belarusian-Russian-University">
+                                    <a
+                                        href="https://github.com/nikitazapekin/Cloud-storage-of-Belarusian-Russian-University">
 
                                         Client code on github
                                     </a>
@@ -307,7 +346,8 @@
                                 Job search site
                             </h3>
                             <p class="slider__item-describtion">
-                                This site is an application where the user can post his job offer. Also, the user's proposal may be changed. Code on github. Server side code on github.
+                                This site is an application where the user can post his job offer. Also, the user's
+                                proposal may be changed. Code on github. Server side code on github.
                             </p>
                             <div class="slider__item-btns">
                                 <div class="slider__item-btn">
@@ -326,7 +366,7 @@
                         </div>
                         <div class="slider__item">
                             <h3 class="slider__item-title">
-                                Application - database navigator from NASA
+                                Application - database navigator (NASA)
                             </h3>
                             <p class="slider__item-describtion">
                                 This application allows users to explore the data provided by the NASA API. The user can
@@ -374,108 +414,44 @@
                     </ul>
                 </div>
             </section>
+
+            <section class="code">
+                <div class="code__container">
+                    <h2 class="code__title text-title">
+                        Code examples
+                    </h2>
+                    <pre><code class="language-javascript code-block">
+        // функция суммы двух чисел
+        function add(a, b) {
+                    return a + b;
+                }
+        
+                // вызов
+                const result = add(5, 3);
+                console.log('The result is:', result);
+            </code></pre>
+
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
-           <div class="footer__container">
-            <img  src="./images/skills/22.png" alt="github" >
-            <p class="footer__text">
-                Created at 2024
-           </p>
-           <img  src="./images/common/rs.png" alt="rs" >
-        </div>
+            <div class="footer__container">
+                <img src="./images/skills/22.png" alt="github">
+                <p class="footer__text">
+                    Created at 2024
+                </p>
+                <a href="https://rs.school/courses/javascript-ru">
+
+                    <img src="./images/common/rs.png" alt="rs">
+                </a>
+            </div>
         </footer>
+
     </div>
     <script src="./scripts/slider.js"></script>
+    <script src="./scripts/burger.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.js"></script>
 </body>
 
 </html>
-
-
-<!--
- <section class="projects">
-                <div class="projects__container">
-                </div>
-                    <h2 class="projects__title text-title">
-                        Work experience
-                    </h2>
-                    <div class="slider">
-                        <div class="carousel">
-                            <div class="slider__item">
-                             start
-                            </div>
-                            <div class="slider__item">
-                               dsv
-                            </div>
-                            <div class="slider__item">
-                             end
-                            </div>
-                        </div>
-                </div>
-                <button class="test1">1</button>
-                <button class="test2">2</button>
-            </section>
--->
-<!-- https://codeguide.academy/html-css.html
-Атрибут class идёт сразу после имени тега.
-  Хорошо 
-<label class="field-group-label" for="appointment-phone">
-    <input class="field-group-input field" type="text" id="appointment-phone" placeholder="+7 000-00-00">
-    
-    <label class="field-group-label" for="appointment-date">
-    <input class="field-group-input field" type="text" id="appointment-date" placeholder="01.01.2020">
-    
-     Плохо 
-    <label for="appointment-phone" class="field-group-label">
-    <input class="field-group-input field" type="text" placeholder="+7 000-00-00" id="appointment-phone" >
-    
-    <label for="appointment-date" class="field-group-label">
-    <input id="appointment-date" class="field-group-input field" type="text" placeholder="01.01.2020">
-                    
--->
-
-
-<!--
-https://petr9ra.github.io/rsschool-cv/
-https://estydaven.github.io/rsschool-cv/
-https://alexandrdrozdfd.github.io/rsschool-cv/
-https://yuriandev.github.io/rsschool-cv/
-https://annavoloshina.github.io/rsschool-cv/
-https://themrcrowley.github.io/rsschool-cv/
-https://elvinyeka.github.io/rsschool-cv/
-
-
-
-
-Максимальный балл за задание +120
-
-студент засабмитил в rs app ссылку на своё CV, задеплоенное на gh-pages +10
-вёрстка валидная +10
-для проверки валидности вёрстки используйте сервис https://validator.w3.org/
-валидной вёрстке соответствует надпись "Document checking completed. No errors or warnings to show." В таком случае баллы за пункт требований выставляем полностью.
-если есть предупреждения - warnings, но нет ошибок - errors, выставляем половину баллов за пункт требований
-вёрстка семантическая +20
-В коде странице присутствуют и используются по назначению следующие элементы:
-Под "используются по назначению" имеется в виду, что у элементов есть какое-то содержание, соответствующее типу элемента, а не добавлены пустые теги для получения баллов. Правильность использования элементов не проверяется и на балл не влияет.
-header, main, footer +5
-элемент nav +5
-только один заголовок h1 +5
-заголовки h2 +5
-в footer есть ссылка на гитхаб автора работы, год создания приложения, логотип курса со ссылкой на курс +10
-Если ссылка в футере ведёт на курс stage0, это не ошибка.
-для оформления СV используются css-стили +10
-при уменьшении масштаба страницы браузера вёрстка размещается по центру по горизонтали, а не сдвигается в сторону +10
-на странице СV есть фото или аватарка автора, пропорции изображения не искажены, у изображения есть атрибут alt +10
-навигация, контакты для связи и перечень навыков оформлены в виде списка ul > li или ul > li > a +10
-Также допускается использование нумерованого списка ol > li или ol > li > a
-Содержание CV +30
-CV содержит:
-краткую информацию о себе +5
-контакты для связи +5
-перечень навыков +5
-пример кода. Код добавляется при помощи символов и тегов, а не картинкой +5
-перечень выполненных учебных проектов со ссылками на исходный код или страницу приложения +5
-информацию об образовании и уровне английского +5
-CV выполнено на английском языке +10
-Разница между максимальной оценкой за задание (130 баллов) и максимально возможным количеством баллов за выполнение всех пунктов требований (120 баллов) позволит сгладить возможные ошибки проверяющих в ходе кросс-чека, неточности в описании задания, разное понимание требований задания проверяющим и проверяемым.
--->
