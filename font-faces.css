@@ -1,0 +1,38 @@
+@font-face {
+   /* font-family: 'MyCustomFont'; */
+   font-family: 'GeorgiaR';
+    src: url('fonts/ofont.ru_Georgia.ttf') format('truetype');
+    font-weight: Regular;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ArialR';
+    src: url('fonts/ofont.ru_Georgia.ttf') format('truetype');
+    font-weight: Regular;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeorgiaB';
+    src: url('fonts/ofont.ru_GeorgiaBold.ttf') format('truetype');
+    font-weight: Bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GeorgiaI';
+    src: url('fonts/ofont.ru_GeorgiaItalic.ttf') format('truetype');
+    font-weight: Italic;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ArialR';
+    src: url('fonts/ofont.ru_AriaII.ttf') format('truetype');
+    font-weight: Regular;
+    font-style: normal;
+}
+
+/*
+body {
+    font-family: 'MyCustomFont', sans-serif;
+}
+    */
