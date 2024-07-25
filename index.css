@@ -50,15 +50,90 @@ html {
     padding: 46px 0px 20px 0px;
 }
 
+
+
+
 .header__link {
     font-family: 'GeorgiaR';
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
     color: #cdcdcd;
+    text-decoration: none;  
+    position: relative; 
     transition: 0.4s ease-in-out;
 }
 
+.header__link::after {
+    content: '';  
+    display: block; 
+    margin-top: 10px;  
+    background: #f1cdb3; 
+    height: 3px;  
+    width: 100%;  
+    position: absolute; 
+    left: 0;  
+    bottom: -10px;  
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.header__list-item .header__link-active {
+    color: #fafafa;
+}
+.header__list-item .header__link-active-dark {
+    color: #292929;
+}
+.header__link-active::after,
+.header__link-active-dark::after,
+.header__link:hover::after {
+    opacity: 1;
+}
+ 
+/* color: #292929;
+.header__link {
+    font-family: 'GeorgiaR';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #cdcdcd;
+    text-decoration: none;  
+    position: relative; 
+    transition: 0.4s ease-in-out;
+}
+
+.header__list-item .header__link-active {
+    color: #fafafa;
+}
+
+.header__link-active::after {
+    content: '';  
+    display: block; 
+    margin-top: 10px;  
+    background: #f1cdb3; 
+    height: 3px;  
+    width: 100%;  
+    position: absolute; 
+    left: 0;  
+    bottom: -10px;  
+}
+    */
+/*
+.header__link {
+    font-family: 'GeorgiaR';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #cdcdcd;
+    
+}
+
+.header__list-item .header__link-active {
+    color: #fafafa;
+    text-decoration: underline  ;
+}
+*/
+/*
 .header__link:hover {
     text-decoration: underline;
 
@@ -69,7 +144,7 @@ html {
     color: #fafafa;
     text-decoration-color: #f1cdb3;
 }
-
+*/
 .burger {
     display: none;
 
@@ -383,6 +458,10 @@ border: 1px solid #000;
     color: #545454;
 
 
+    
+}
+.friends__link {
+    color: #292929;
 }
 
 @media screen and (max-width: 375px) {
@@ -429,7 +508,6 @@ border: 1px solid #000;
 
 .friends__btn {
     align-self: center;
- /*   margin-bottom: 100px;  */
 }
 
 @media screen and (max-width: 505px) {
@@ -460,10 +538,6 @@ border: 1px solid #000;
     .slider__btn {
         order: 2;
         margin-bottom: 20px;
-        /*   margin-left: 45px;
-    margin-right: 45px;
-
-    */
         margin-left: auto;
         margin-right: auto;
     }
@@ -551,8 +625,6 @@ border: 1px solid #000;
     .help__card-img {
         text-align: center;
         margin-bottom: 20px;
-        /*  width: 35%;
-    max-height: 50px; */
         width: 50px;
         height: 50px;
         object-fit: contain;
@@ -614,7 +686,9 @@ border: 1px solid #000;
     letter-spacing: 0.06em;
     color: #545454;
 }
-
+.donation__number a {
+    color: #545454;
+}
 .donation__about {
     font-family: 'Arial';
     font-style: italic;
@@ -698,7 +772,6 @@ border: 1px solid #000;
     display: flex;
     justify-content: space-between;
     min-height: 350px;
-    /*  column-gap: 60px; */
     column-gap: 10px;
 }
 
@@ -707,7 +780,6 @@ border: 1px solid #000;
 
     display: flex;
     flex-direction: column;
-    /*   row-gap: 40px; */
 }
 
 .footer__item-title {
@@ -734,7 +806,9 @@ border: 1px solid #000;
     letter-spacing: 0.06em;
     color: #f1cdb3;
 }
-
+.footer__item-text a {
+    color: #f1cdb3;
+}
 .footer__image {
     margin-top: auto;
     object-fit: contain;

@@ -57,21 +57,6 @@ margin-top: 60px;
     transition: 0.4s ease-in-out;
 }
 
-.header__link-dark:hover {
-    color: #292929;
-
-
-    text-decoration: underline;
-
-
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 160%;
-   
-    text-decoration-color: #f1cdb3;
-}
-
- 
 @media screen and (max-width: 1250px) {
     .pet__card-item:nth-child(7), .pet__card-item:nth-child(8) {
 display: none;

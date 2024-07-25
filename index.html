@@ -11,6 +11,7 @@
     <link href="./styles/breakpoints.css" rel="stylesheet">
     <link href="./index.css" rel="stylesheet">
     <link href="./styles/common.css" rel="stylesheet">
+    <link rel="icon" href="./assets/cat.png" type="image/png">
     <title>Shelter</title>
 </head>
 
@@ -19,27 +20,27 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
-                <div class="header__logo">
+                <a href="#" class="header__logo">
                     <p class="header__logo-title">
                         Cozy House
                     </p>
                     <p class="header__logo-subtitle">
                         Shelter for pets in Boston
                     </p>
-                </div>
+                </a>
                 <nav class="header__navigation">
                     <ul class="header__list">
                         <li class="header__list-item">
-                            <a href="#" class="header__link">About the shelter</a>
+                            <a href="#" class="header__link header__link-active">About the shelter</a>
                         </li>
                         <li class="header__list-item">
                             <a href="#" class="header__link">Our pets</a>
                         </li>
                         <li class="header__list-item">
-                            <a href="#" class="header__link">Help the shelter</a>
+                            <a href="#help" class="header__link">Help the shelter</a>
                         </li>
                         <li class="header__list-item">
-                            <a href="#" class="header__link">Contacts</a>
+                            <a href="#contacts" class="header__link">Contacts</a>
                         </li>
                     </ul>
                 </nav>
@@ -51,27 +52,7 @@
                         <span class="burger__line"></span>
                         <span class="burger__line"></span>
                     </div>
-                    <!--
-                        
-                    
-                    <div class="burger__content">
-                        <ul class="burger__list">
-                            <li class="burger__item">
-                                <a href="#" class="burger__link">About the shelter</a>
-                            </li>
-                            <li class="burger__item">
-                                <a href="#" class="burger__link">Our pets</a>
-                            </li>
-                            <li class="burger__item">
-                                <a href="#" class="burger__link">Help the shelter</a>
-                            </li>
-                            <li class="burger__item">
-                                <a href="#" class="burger__link">Contacts</a>
-                            </li>
-                        </ul>
-                    </div>
-                    git remote add origin https://github.com/nikitazapekin/rsschool-cv.git
-                    -->
+                  
                   
                     
                 </div>
@@ -93,7 +74,7 @@
                             He or she will love you more than anybody else in the world, you will see!
                         </h2>
                         <button class="need__btn btn">
-                            <a href="pets.html" class="need__link">
+                            <a href="#ourfriends" class="need__link">
 
                                 Make a friend
                             </a>
@@ -125,7 +106,7 @@
                     </div>
                 </div>
             </section>
-            <section class="friends">
+            <section class="friends" id="ourfriends">
                 <div class="friends__container">
                     <p class="friends__title title">
                         Our friends who <br />
@@ -202,12 +183,15 @@
                     </div>
 
                     <button class="friends__btn btn">
-                        Get to know the rest
-                    </button>
+                        <a class="friends__link" href="./pets.html">
+
+                            Get to know the rest
+                        </a>
+                        </button>
                 </div>
 
             </section>
-            <section class="help">
+            <section class="help" id="help">
                 <div class="help__container">
                     <h2 class="help__title title">
                         How you can help <br />
@@ -305,7 +289,10 @@
                         <div class="donation__btn">
                             <img src="./assets/icons/credit-card.png" alt="card" class="donation__icon">
                             <div class="donation__number">
-                                8380 2880 8028 8791 7435
+                                <a href="#">
+
+                                    8380 2880 8028 8791 7435
+                                </a>
                             </div>
                         </div>
 
@@ -321,7 +308,7 @@
         
 
         </main>
-        <footer class="footer">
+        <footer class="footer" id="contacts">
             <div class="footer__container">
                 <div class="footer__item">
                     <h3 class="footer__item-title">
@@ -329,15 +316,15 @@
                     </h3>
                     <div class="footer__item-point point-1">
                         <img class="footer__item-icon" src="./assets/icons/icon-email.svg" alt="footer-icon" />
-                        <p class="footer__item-text">
-                            email@shelter.com
-                        </p>
+                        <div class="footer__item-text">
+                            <a href="mailto:email@shelter.com">email@shelter.com</a>
+                        </div>
                     </div>
                     <div class="footer__item-point point-2">
                         <img class="footer__item-icon" src="./assets/icons/icon-phone.svg" alt="footer-icon" />
-                        <p class="footer__item-text">
-                            +13 674 567 75 54
-                        </p>
+                        <div class="footer__item-text">
+                          <a href="tel:+136745677554">+13 674 567 75 54</a>
+                        </div>
                     </div>
                 </div>
 
@@ -348,15 +335,19 @@
                     </h3>
                     <div class="footer__item-point point-3">
                         <img class="footer__item-icon" src="./assets/icons/icon-marker.svg" alt="footer-icon" />
-                        <p class="footer__item-text">
-                            1 Central Street, Boston <br /> (entrance from the store)
-                        </p>
+                        <div class="footer__item-text">
+                            <a href="https://www.google.com/maps?q=1+Central+Street,+Boston+(entrance+from+the+store)" target="_blank">
+                                1 Central Street, Boston <br /> (entrance from the store)
+                            </a>
+                        </div>
                     </div>
                     <div class="footer__item-point point-4">
                         <img class="footer__item-icon" src="./assets/icons/icon-marker.svg" alt="footer-icon" />
-                        <p class="footer__item-text">
-                            18 South Park, London 
-                        </p>
+                        <div class="footer__item-text">
+                            <a href="https://www.google.com/maps?q=18+South+Park,+London" target="_blank">
+                                18 South Park, London
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -367,80 +358,8 @@
         </footer>
       
     </div>
-<script src="./scripts/sidebar.js"></script>
+ 
 </body>
 
 </html>
-
-<!--
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./styles/normalize.css" rel="stylesheet">
-    <link href="./styles/theme.css" rel="stylesheet">
-    <link href="./styles/global.css" rel="stylesheet">
-    <link href="./font-faces.css" rel="stylesheet">
-    <link href="./index.css" rel="stylesheet">
-    <title>Shelter</title>
-</head>
-
-<body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="header__container">
-                <div class="header__logo">
-                    <p class="header__logo-title">
-                        Cozy House
-                    </p>
-                    <p class="header__logo-subtitle">
-                        Shelter for pets in Boston
-                    </p>
-                </div>
-                <nav class="header__navigation">
-                    <ul class="header__list">
-                        <li class="header__list-item">
-                            <a href="#" class="header__link">About the shelter</a>
-                        </li>
-                        <li class="header__list-item">
-                            <a href="#" class="header__link">Our pets</a>
-                        </li>
-                        <li class="header__list-item">
-                            <a href="#" class="header__link">Help the shelter</a>
-                        </li>
-                        <li class="header__list-item">
-                            <a href="#" class="header__link">Contacts</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main class="content">
-            <section class="need">
-                <div class="need__container">
-                    <div class="need__content">
-                        <h1 class="need__title">
-                            Not only people need a house
-                        </h1>
-                        <h2 class="need__about">
-                            We offer to give a chance to a little and nice puppy with an extremely wide and open heart.
-                            He or she will love you more than anybody else in the world, you will see!
-                        </h2>
-                        <button class="need__btn btn">
-                            Make a friend
-                        </button>
-                    </div>
-                    <img src="./assets/start-screen-puppy.png" alt="dog" class="need__image">
-                </div>
-                <img src="./assets/Start screen.jpg" alt="fon" class="need__background">
-            </section>
-        </main>
-        ac
-    </div>
-
-</body>
-
-</html>
--->
+ 

@@ -12,33 +12,34 @@
     <link href="./index.css" rel="stylesheet">
     <link href="./styles/common.css" rel="stylesheet">
     <link href="./pets.css" rel="stylesheet">
+    <link rel="icon" href="./assets/cat.png" type="image/png">
     <title>Shelter</title>
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
-                <div class="header__logo">
+                <a href="#" class="header__logo">
                     <p class="header__logo-title header__logo-title-dark">
                         Cozy House
                     </p>
                     <p class="header__logo-subtitle header__logo-subtitle-dark">
                         Shelter for pets in Boston
                     </p>
-                </div>
+                </a>
                 <nav class="header__navigation">
                     <ul class="header__list">
                         <li class="header__list-item">
                             <a href="#" class="header__link header__link-dark">About the shelter</a>
                         </li>
                         <li class="header__list-item">
-                            <a href="#" class="header__link header__link-dark">Our pets</a>
+                            <a href="#" class="header__link header__link-dark header__link-active-dark">Our pets</a>
                         </li>
                         <li class="header__list-item">
-                            <a href="#" class="header__link header__link-dark">Help the shelter</a>
+                            <a href="index.html#help" class="header__link header__link-dark">Help the shelter</a>
                         </li>
                         <li class="header__list-item">
-                            <a href="#" class="header__link header__link-dark">Contacts</a>
+                            <a href="#contacts" class="header__link header__link-dark">Contacts</a>
                         </li>
                     </ul>
                 </nav>
@@ -178,8 +179,6 @@
                                         </button>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                      
@@ -195,7 +194,8 @@
             </section>
 
         </main>
-        <footer class="footer">
+     
+        <footer class="footer" id="contacts">
             <div class="footer__container">
                 <div class="footer__item">
                     <h3 class="footer__item-title">
@@ -203,15 +203,15 @@
                     </h3>
                     <div class="footer__item-point point-1">
                         <img class="footer__item-icon" src="./assets/icons/icon-email.svg" alt="footer-icon" />
-                        <p class="footer__item-text">
-                            email@shelter.com
-                        </p>
+                        <div class="footer__item-text">
+                            <a href="mailto:email@shelter.com">email@shelter.com</a>
+                        </div>
                     </div>
                     <div class="footer__item-point point-2">
                         <img class="footer__item-icon" src="./assets/icons/icon-phone.svg" alt="footer-icon" />
-                        <p class="footer__item-text">
-                            +13 674 567 75 54
-                        </p>
+                        <div class="footer__item-text">
+                          <a href="tel:+136745677554">+13 674 567 75 54</a>
+                        </div>
                     </div>
                 </div>
 
@@ -222,15 +222,19 @@
                     </h3>
                     <div class="footer__item-point point-3">
                         <img class="footer__item-icon" src="./assets/icons/icon-marker.svg" alt="footer-icon" />
-                        <p class="footer__item-text">
-                            1 Central Street, Boston <br /> (entrance from the store)
-                        </p>
+                        <div class="footer__item-text">
+                            <a href="https://www.google.com/maps?q=1+Central+Street,+Boston+(entrance+from+the+store)" target="_blank">
+                                1 Central Street, Boston <br /> (entrance from the store)
+                            </a>
+                        </div>
                     </div>
                     <div class="footer__item-point point-4">
                         <img class="footer__item-icon" src="./assets/icons/icon-marker.svg" alt="footer-icon" />
-                        <p class="footer__item-text">
-                            18 South Park, London
-                        </p>
+                        <div class="footer__item-text">
+                            <a href="https://www.google.com/maps?q=18+South+Park,+London" target="_blank">
+                                18 South Park, London
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -239,6 +243,7 @@
             </div>
 
         </footer>
+      
 
     </div>
 
