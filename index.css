@@ -868,5 +868,7 @@ font-size: 25px;
 
 
 .need__link {
+    max-width: 207px;
+    white-space: nowrap;
  color: #292929;
 }
