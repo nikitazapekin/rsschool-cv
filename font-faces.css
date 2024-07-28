@@ -1,5 +1,5 @@
 @font-face {
-   /* font-family: 'MyCustomFont'; */
+ 
    font-family: 'GeorgiaR';
     src: url('fonts/ofont.ru_Georgia.ttf') format('truetype');
     font-weight: Regular;
@@ -30,9 +30,4 @@
     font-weight: Regular;
     font-style: normal;
 }
-
-/*
-body {
-    font-family: 'MyCustomFont', sans-serif;
-}
-    */
+ 
