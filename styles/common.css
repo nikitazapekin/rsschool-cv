@@ -45,22 +45,7 @@
     color: #292929;
     transition: 0.4s ease-in-out;
 }
-
-
-/*
-.round-btn {
-    padding: 23px 19px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #f1cdb3;
-    transition: 0.4s ease-in-out;
-    width: 52px;
-    height: 52px;
-    object-fit: contain;
-}
-    */
+ 
 
 
 .round-btn {
@@ -75,6 +60,17 @@
     height: 52px;
 }
 
+.round-btn-disabled {
+    padding: 23px 19px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #f1cdb3;
+    transition: 0.4s ease-in-out;
+    width: 52px;
+    height: 52px;
+}
 
 .round-btn img {
     width: 14px;
